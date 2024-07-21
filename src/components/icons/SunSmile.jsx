@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
-import anime from "animejs";
-import { useEffect, useRef } from "react";
-
+import anime from 'animejs';
+import { useEffect, useRef } from 'react';
 export const SunSmile = () => {
 	const rectRef = useRef(null);
 
@@ -11,9 +10,10 @@ export const SunSmile = () => {
 			anime({
 				targets: rectRef.current,
 				width: [0, 40],
-				easing: "linear",
+				easing: 'linear',
 				duration: 1000,
 				loop: false,
+				delay: 600,
 			});
 		}
 	}, []);
@@ -23,14 +23,14 @@ export const SunSmile = () => {
 		anime({
 			targets: rectRef.current,
 			width: [0, 40],
-			easing: "linear",
+			easing: 'linear',
 			duration: 1000,
 			loop: false,
 		});
 	};
 
 	return (
-		<div className="cursor-pointer" onMouseEnter={onMouseEnter}>
+		<div className="cursor-pointer w-fit" onMouseEnter={onMouseEnter}>
 			<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M19.0001 0.169922L22.9001 8.02192L31.2121 4.38192L28.8721 12.7699L37.7121 15.0459L30.2261 20.0459L35.4541 27.1699L26.3281 26.4439L25.4981 35.0859L19.0001 28.9699L12.5021 35.0859L11.6721 26.4439L2.54609 27.1699L7.77409 20.0459L0.288086 15.0459L9.12809 12.7699L6.78809 4.38192L15.1001 8.02192L19.0001 0.169922Z"

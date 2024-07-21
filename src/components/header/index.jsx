@@ -8,7 +8,6 @@ import Button from '../button';
 
 export const Header = () => {
 	const path = usePathname();
-	console.log('🧙 ~ path:', path);
 
 	const navs = [
 		{

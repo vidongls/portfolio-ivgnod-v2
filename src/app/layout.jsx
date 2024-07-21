@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
 			<MetaTags
 				title="Le Minh Quyen Portfolio"
 				description="Đây là trang web về Lê Minh Quyền"
-				image={'https://portfolio-ivgnod-v2.vercel.app/images/hero-name.svg'}
+				image={'https://portfolio-ivgnod-v2.vercel.app/images/hero-name2.png'}
 				url="https://portfolio-ivgnod-v2.vercel.app/"
 			/>
 			<body className={`${roobert.variable} font-roobert`}>{children}</body>

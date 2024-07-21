@@ -1,31 +1,31 @@
-"use client";
+'use client';
 
-import { SunSmile } from "@/components/icons/SunSmile";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Button from "../button";
+import { SunSmile } from '@/components/icons/SunSmile';
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Button from '../button';
 
 export const Header = () => {
 	const path = usePathname();
-	console.log("🧙 ~ path:", path);
+	console.log('🧙 ~ path:', path);
 
 	const navs = [
 		{
-			path: "/",
-			title: "My work",
+			path: '/',
+			title: 'My work',
 		},
 		{
-			path: "/about",
-			title: "About",
+			path: '/about',
+			title: 'About',
 		},
 		{
-			path: "/contact",
-			title: "Contact",
+			path: '/contact',
+			title: 'Contact',
 		},
 		{
-			path: "/life",
-			title: "Life",
+			path: '/life',
+			title: 'Life',
 		},
 	];
 
@@ -37,10 +37,10 @@ export const Header = () => {
 					{navs.map((nav) => (
 						<li key={nav.path}>
 							<Link
-								href={"/"}
+								href={'/'}
 								className={cn(
-									"leading-7 font-medium text-2xl pb-2.5 text-purple-2 py-3 hover:border-b-3 hover:border-b-accent-3 hover:text-accent-3 transition-all ease-linear duration-150",
-									path === nav.path && "border-b-3 border-b-accent-3 text-accent-3"
+									'leading-7 font-medium text-2xl pb-2.5 text-purple-2 py-3 hover:border-b-3 hover:border-b-accent-3 hover:text-accent-3 transition-all ease-linear duration-150',
+									path === nav.path && 'border-b-3 border-b-accent-3 text-accent-3'
 								)}
 							>
 								{nav.title}

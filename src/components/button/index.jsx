@@ -16,9 +16,7 @@ const Button = ({ title }) => {
 
 		const getXY = (e) => {
 			const { left, top, width, height } = button.getBoundingClientRect();
-
 			const xTransformer = gsap.utils.pipe(gsap.utils.mapRange(0, width, 0, 100), gsap.utils.clamp(0, 100));
-
 			const yTransformer = gsap.utils.pipe(gsap.utils.mapRange(0, height, 0, 100), gsap.utils.clamp(0, 100));
 
 			return {

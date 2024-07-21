@@ -4,6 +4,7 @@ import { ScrollToTopOnRefresh } from '@/components/ScrollToTopOnRefresh/ScrollTo
 import InformationSection from './_components/InformationSection';
 import MainSection from './_components/MainSection';
 import { gsap, useGSAP, ScrollTrigger } from '@/libs/gsap';
+import { LoadingFullPage } from '@/components/loading-full';
 
 export default function Home() {
 	useGSAP(() => {
@@ -26,6 +27,7 @@ export default function Home() {
 			<MainSection />
 			<InformationSection />
 			<ScrollToTopOnRefresh />
+			<LoadingFullPage />
 		</>
 	);
 }

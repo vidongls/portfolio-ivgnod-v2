@@ -1,4 +1,4 @@
-import MetaTags from '@/components/MetaTags/MetaTags';
+import { MetaTags } from '@/components/MetaTags/MetaTags';
 import './globals.css';
 import localFont from '@next/font/local';
 
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
 			<MetaTags
 				title="Le Minh Quyen Portfolio"
 				description="Đây là trang web về Lê Minh Quyền"
-				image={'/images/hero-name.svg'}
+				image={'https://portfolio-ivgnod-v2.vercel.app/images/hero-name.svg'}
 				url="https://portfolio-ivgnod-v2.vercel.app/"
 			/>
 			<body className={`${roobert.variable} font-roobert`}>{children}</body>

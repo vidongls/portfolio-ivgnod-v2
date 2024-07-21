@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const MetaTags = ({ title, description, image, url }) => {
+export const MetaTags = ({ title, description, image, url }) => {
 	return (
 		<Head>
 			<title>{title}</title>
@@ -13,5 +13,3 @@ const MetaTags = ({ title, description, image, url }) => {
 		</Head>
 	);
 };
-
-export default MetaTags;

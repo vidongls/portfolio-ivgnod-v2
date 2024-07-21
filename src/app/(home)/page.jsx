@@ -1,5 +1,6 @@
 'use client';
 
+import { ScrollToTopOnRefresh } from '@/components/ScrollToTopOnRefresh/ScrollToTopOnRefresh';
 import InformationSection from './_components/InformationSection';
 import MainSection from './_components/MainSection';
 import { gsap, useGSAP, ScrollTrigger } from '@/libs/gsap';
@@ -24,6 +25,7 @@ export default function Home() {
 		<>
 			<MainSection />
 			<InformationSection />
+			<ScrollToTopOnRefresh />
 		</>
 	);
 }

@@ -1,3 +1,4 @@
+import MetaTags from '@/components/MetaTags/MetaTags';
 import './globals.css';
 import localFont from '@next/font/local';
 
@@ -45,6 +46,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
+			<link rel="icon" href="/images/hero-name.svg" />
+			<MetaTags
+				title="Le Minh Quyen Portfolio"
+				description="Đây là trang web về Lê Minh Quyền"
+				image={'/images/hero-name.svg'}
+				url="https://portfolio-ivgnod-v2.vercel.app/"
+			/>
 			<body className={`${roobert.variable} font-roobert`}>{children}</body>
 		</html>
 	);

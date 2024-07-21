@@ -13,9 +13,9 @@ export const metadata = {
 	openGraph: {
 		title: 'Le Minh Quyen Portfolio',
 		description: 'Đây là trang web về Lê Minh Quyền',
-		url: '',
+		url: 'https://portfolio-ivgnod-v2.vercel.app',
 		images: {
-			url: '/images/hero-name2.png',
+			url: 'https://portfolio-ivgnod-v2.vercel.app/images/hero-name2.png',
 			width: '100%',
 			height: '100%',
 		},
@@ -24,7 +24,7 @@ export const metadata = {
 		title: 'Le Minh Quyen Portfolio',
 		description: 'Đây là trang web về Lê Minh Quyền',
 		images: {
-			url: '/images/hero-name2.png',
+			url: 'https://portfolio-ivgnod-v2.vercel.app/images/hero-name2.png',
 			width: '100%',
 			height: '100%',
 		},

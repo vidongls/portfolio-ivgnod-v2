@@ -11,9 +11,9 @@ const MainSection = () => {
 
 	useLenis(() => {
 		gsap.to(contentRef.current, {
-			scale: 1 - window.scrollY / 1600, // Thay đổi tỷ lệ khi cuộn
+			scale: 1 - window.scrollY / 1200, // Thay đổi tỷ lệ khi cuộn
 			ease: 'power1.out',
-			y: () => -window.scrollY,
+			y: () => -window.scrollY * 0.85,
 			duration: 1,
 		});
 	});

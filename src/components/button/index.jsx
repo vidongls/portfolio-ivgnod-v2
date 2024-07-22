@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
 const Button = ({ title }) => {
 	const buttonRef = useRef(null);
@@ -11,8 +11,8 @@ const Button = ({ title }) => {
 
 		if (!button || !flair) return;
 
-		const xSet = gsap.quickSetter(flair, "xPercent");
-		const ySet = gsap.quickSetter(flair, "yPercent");
+		const xSet = gsap.quickSetter(flair, 'xPercent');
+		const ySet = gsap.quickSetter(flair, 'yPercent');
 
 		const getXY = (e) => {
 			const { left, top, width, height } = button.getBoundingClientRect();
@@ -34,7 +34,7 @@ const Button = ({ title }) => {
 			gsap.to(flair, {
 				scale: 1,
 				duration: 0.4,
-				ease: "power2.out",
+				ease: 'power2.out',
 			});
 		};
 
@@ -48,7 +48,7 @@ const Button = ({ title }) => {
 				yPercent: y > 90 ? y + 20 : y < 10 ? y - 20 : y,
 				scale: 0,
 				duration: 0.3,
-				ease: "power2.out",
+				ease: 'power2.out',
 			});
 		};
 
@@ -59,18 +59,18 @@ const Button = ({ title }) => {
 				xPercent: x,
 				yPercent: y,
 				duration: 0.4,
-				ease: "power2",
+				ease: 'power2',
 			});
 		};
 
-		button.addEventListener("mouseenter", handleMouseEnter);
-		button.addEventListener("mouseleave", handleMouseLeave);
-		button.addEventListener("mousemove", handleMouseMove);
+		button.addEventListener('mouseenter', handleMouseEnter);
+		button.addEventListener('mouseleave', handleMouseLeave);
+		button.addEventListener('mousemove', handleMouseMove);
 
 		return () => {
-			button.removeEventListener("mouseenter", handleMouseEnter);
-			button.removeEventListener("mouseleave", handleMouseLeave);
-			button.removeEventListener("mousemove", handleMouseMove);
+			button.removeEventListener('mouseenter', handleMouseEnter);
+			button.removeEventListener('mouseleave', handleMouseLeave);
+			button.removeEventListener('mousemove', handleMouseMove);
 		};
 	}, []);
 
